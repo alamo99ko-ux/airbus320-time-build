@@ -57,17 +57,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: [50, 0] }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight mb-6 animate-fade-in"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-8 animate-fade-in"
           >
-            <span className="block text-[#00AEEF] text-lg sm:text-xl lg:text-2xl font-semibold mb-3 tracking-wide font-sans">
-              빌딩을 올리고 싶으세요? 당신의 타임빌딩을 실전 운항노선으로 완성해 가십시오.
+            <span className="block text-[#00AEEF] text-base sm:text-lg lg:text-xl font-semibold mb-4 tracking-wide font-sans">
+              빌딩을 올리고 싶으세요? 당신의 타임빌딩을 터보팬 항공기와 운항노선경험으로 완성해 가십시오.
             </span>
-            당신의 비행 경력, <br />
-            <span className="text-[#00AEEF] relative">
-              A320 & B737
-              <span className="absolute bottom-1 left-0 w-full h-[4px] bg-[#00AEEF]/40"></span>
-            </span>
-            에서 완성하십시오.
+            당신의 비행 경력, <span className="text-[#00AEEF] relative inline-block">A320 과 B737 로 완성하십시오<span className="absolute bottom-1 left-0 w-full h-[4px] bg-[#00AEEF]/40"></span></span>
           </motion.h1>
 
           {/* Description Paragraph */}
