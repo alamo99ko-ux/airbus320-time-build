@@ -1,0 +1,6 @@
+{
+  "name": "A320 Time Building",
+  "description": "CPL 소종사 대상 고품격 A320 타임빌딩(경력 축적) 전문 프로그램 랜딩페이지. 최신 시뮬레이터 교육, 베테랑 교관진, 커리어 상담 및 실질적인 훈련 여정을 선사합니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
