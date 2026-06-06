@@ -68,9 +68,9 @@ export default function Header() {
             </div>
             <div>
               <span className="text-lg md:text-xl font-bold text-white tracking-widest font-sans uppercase">
-                A320 <span className="text-[#00AEEF]">Time Building</span>
+                타임빌딩 <span className="text-[#00AEEF]">아카데미</span>
               </span>
-              <p className="text-[9px] text-gray-400 font-mono tracking-wider">PROFESSIONAL COCKPIT ACADEMY</p>
+              <p className="text-[9px] text-gray-400 font-mono tracking-wider">TIME BUILDING ACADEMY</p>
             </div>
           </div>
 

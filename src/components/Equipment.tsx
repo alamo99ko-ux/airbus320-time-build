@@ -64,7 +64,7 @@ export default function Equipment() {
               transition={{ delay: 0.1, duration: 0.7 }}
               className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6"
             >
-              국토교통부 최고기준 인증 <br />
+              ICAO Level D 및 FAA 5등급 이상 인증 <br />
               <span className="text-[#00AEEF]">{EQUIPMENT_DATA.title}</span>
             </motion.h2>
 
@@ -103,7 +103,7 @@ export default function Equipment() {
                 <Award className="h-6 w-6 text-[#00AEEF] shrink-0" />
                 <div>
                   <p className="text-xs text-gray-400 font-mono tracking-wider">CERTIFICATE</p>
-                  <p className="text-sm font-bold text-white leading-tight">가등급 공식 수령</p>
+                  <p className="text-sm font-bold text-white leading-tight">ICAO Level D & FAA 5등급</p>
                 </div>
               </div>
               <div className="p-4 rounded-xl border border-emerald-500/20 bg-[#112D5E]/40 flex items-center space-x-3">

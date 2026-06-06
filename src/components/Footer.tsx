@@ -26,11 +26,11 @@ export default function Footer() {
                 <Plane className="h-5 w-5 text-[#00AEEF] transform -rotate-45" />
               </div>
               <span className="text-base sm:text-lg font-bold text-white tracking-widest uppercase">
-                A320 <span className="text-[#00AEEF]">Time Building</span>
+                타임빌딩 <span className="text-[#00AEEF]">아카데미</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-sm font-sans">
-              에어라인 입사와 실기 평정의 격을 높이는 Airbus A320 FTD 모의비행 경력 구축 전문 기관. 14,500시간 이상 실기 비행 이력을 갖춘 수석 기장진의 SOP 정교 훈련을 제공받으십시오.
+              에어라인 입사와 실기 평정의 격을 높이는 Airbus A320 및 Boeing B737-800 FTD 모의비행 경력 구축 전문 기관. 현직 최고의 기장진의 SOP 정교 훈련을 제공받으십시오.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li className="flex items-center space-x-2 text-gray-400">
                 <Shield className="h-4 w-4 text-[#00AEEF]" />
-                <span>국토교통부 FTD 가등급 인증 교육</span>
+                <span>ICAO Level D 및 FAA 5등급 이상 인증 교육</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Navigation className="h-4 w-4 text-[#00AEEF]" />
@@ -74,14 +74,14 @@ export default function Footer() {
         {/* Corporate bottom declarations */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] gap-4 font-sans text-gray-500">
           <div className="space-y-1.5 text-center sm:text-left leading-relaxed">
-            <p className="font-bold">A320 타임빌딩 비행경력 아카데미 (상호: A320 TIME BUILDING COCKPIT ACADEMY)</p>
+            <p className="font-bold">타임빌딩 아카데미 (상호: TIME BUILDING ACADEMY)</p>
             <p>
-              사업자등록번호: 242-86-24282 | 통신판매업신고: 제 2026-서울강서-1123호 | 대표 교육위원: 김성우 수석 기장
+              사업자등록번호: 546-81-00499 | 통신판매업신고: 제 2017-경기부천-1197호
             </p>
-            <p>주소: 서울특별시 강서구 하늘길 210 비행 교육 콤플렉스 FTD 정밀 훈련 기지 402호</p>
+            <p>주소: 인천 부평구 수변로 115, 305호</p>
           </div>
           <div className="text-center sm:text-right font-mono space-y-2 shrink-0">
-            <p>© {currentYear} A320 TIME BUILDING COCKPIT ACADEMY. ALL RIGHTS RESERVED.</p>
+            <p>© {currentYear} TIME BUILDING ACADEMY. ALL RIGHTS RESERVED.</p>
             <p className="text-[9px] text-[#00AEEF]/60 flex items-center justify-center sm:justify-end gap-1 font-sans">
               <span>Crafted for Aviators standard protocol</span>
               <ExternalLink className="h-3 w-3" />

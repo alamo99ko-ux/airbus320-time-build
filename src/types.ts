@@ -41,4 +41,5 @@ export interface ContactSubmitData {
   cplYear: string;
   totalFlightHours: string;
   availablePeriods: string[];
+  aircraftPreference: string;
 }

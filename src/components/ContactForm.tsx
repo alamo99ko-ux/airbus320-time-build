@@ -16,11 +16,13 @@ export default function ContactForm() {
     cplYear: "",
     totalFlightHours: "",
     availablePeriods: [],
+    aircraftPreference: "A320",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [submittedNickname, setSubmittedNickname] = useState("");
+  const [submittedAircraft, setSubmittedAircraft] = useState("");
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -52,17 +54,19 @@ export default function ContactForm() {
       !formData.email ||
       !formData.cplYear ||
       !formData.totalFlightHours ||
+      !formData.aircraftPreference ||
       formData.availablePeriods.length === 0
     ) {
-      alert("닉네임, 휴대번호, 이메일, CPL 취득연도, 총비행시간, 입과가능한시기는 필수 입력 사항입니다.");
+      alert("닉네임, 휴대번호, 이메일, CPL 취득연도, 총비행시간, 기종 우선순위, 입과가능한시기는 필수 입력 사항입니다.");
       return;
     }
 
     setIsSubmitting(true);
 
     setTimeout(() => {
-      console.log("✈️ [A320 TIME BUILDING] NEW CONSULTATION APP RECEIVED ✈️", formData);
+      console.log("✈️ [A320/B737 TIME BUILDING] NEW CONSULTATION APP RECEIVED ✈️", formData);
       setSubmittedNickname(formData.nickname);
+      setSubmittedAircraft(formData.aircraftPreference);
       setIsSubmitting(false);
       setShowSuccessModal(true);
 
@@ -74,6 +78,7 @@ export default function ContactForm() {
         cplYear: "",
         totalFlightHours: "",
         availablePeriods: [],
+        aircraftPreference: "A320",
       });
     }, 1500);
   };
@@ -117,6 +122,19 @@ export default function ContactForm() {
             >
               닉네임과 연락처, 조종 이력을 접수해 주시면 수석 교관팀이 24시간 이내에 직접 로그북 진단과 함께 에어라인 지원 타겟 기종 경력 빌딩 견적서를 무상 제공해 드립니다.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="p-5 bg-gradient-to-r from-[#00AEEF]/10 to-transparent border-l-4 border-[#00AEEF] rounded-r-xl"
+            >
+              <h4 className="text-sm font-bold text-white mb-1.5 font-mono uppercase tracking-wider">A320 OR B737-800 SELECTIVE PROGRAM</h4>
+              <p className="text-xs text-slate-300 leading-relaxed font-sans">
+                본 프로그램은 <strong>A320</strong> 또는 <strong>B737-800</strong> 2개의 타입 레이팅(Type Rating) 면허 기종 중 1:1 정밀 심층 상담을 거쳐 최적의 타겟을 선택하여 입과하는 과정입니다.
+              </p>
+            </motion.div>
 
             {/* Quick contact tokens */}
             <div className="space-y-4">
@@ -266,6 +284,43 @@ export default function ContactForm() {
                 />
               </div>
 
+              {/* Aircraft Preference */}
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest font-mono mb-3">
+                  희망 기종 우선순위 <span className="text-[#00AEEF]">*</span>
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {["A320", "B737-800", "상담 후 결정"].map((option) => {
+                    const isSelected = formData.aircraftPreference === option;
+                    return (
+                      <button
+                        key={option}
+                        type="button"
+                        onClick={() => setFormData((prev) => ({ ...prev, aircraftPreference: option }))}
+                        className={`flex items-center justify-between p-3.5 rounded-lg border text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                          isSelected
+                            ? "bg-[#00AEEF]/20 border-[#00AEEF] text-white shadow-[0_0_10px_rgba(0,174,239,0.15)]"
+                            : "bg-[#0A1F44] border-white/10 text-gray-400 hover:border-[#00AEEF]/40 hover:text-white"
+                        }`}
+                      >
+                        <span>{option}</span>
+                        <div
+                          className={`w-4 h-4 rounded-full flex items-center justify-center border transition-all ${
+                            isSelected
+                              ? "bg-[#00AEEF] border-[#00AEEF] text-[#0A1F44]"
+                              : "border-gray-500 bg-transparent"
+                          }`}
+                        >
+                          {isSelected && (
+                            <div className="w-1.5 h-1.5 rounded-full bg-[#0A1F44]" />
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Available Periods */}
               <div>
                 <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest font-mono mb-3">
@@ -378,6 +433,9 @@ export default function ContactForm() {
                 <div className="w-full bg-[#112D5E]/30 border border-white/10 p-5 rounded-xl mb-6 text-left space-y-3">
                   <p className="text-sm font-sans text-slate-200">
                     반갑습니다, <strong>{submittedNickname}</strong> 조종사님!
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
+                    선택 기종: <strong className="text-[#00AEEF]">{submittedAircraft}</strong>
                   </p>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
                     신청하신 Time Building 예비 과정 분석 및 담당 CAPT 배정이 진행됩니다. 

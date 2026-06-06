@@ -48,7 +48,7 @@ export const CURRICULUM_PHASES: CurriculumPhase[] = [
     title: "Phase 2. FTD Simulator Session",
     subtitle: "SOP 확립 및 절차 정밀 마스터",
     hours: "40 Hours",
-    description: "최첨단 가등급 인증 FTD 기기를 활용하여 기종 전형 및 프로필 비행을 완벽한 흐름으로 체화합니다.",
+    description: "최첨단 ICAO Level D 및 FAA 5등급 이상 인증 FTD 기기를 활용하여 기종 전형 및 프로필 비행을 완벽한 흐름으로 체화합니다.",
     details: [
       "Normal SOP Cockpit Setup 및 Pilot Flying / Pilot Monitoring 역할 훈련",
       "기종 전형(Type Rating) 단골 기동 프로필 반복 달성 및 완벽 교정",
@@ -73,10 +73,10 @@ export const CURRICULUM_PHASES: CurriculumPhase[] = [
 
 export const EQUIPMENT_DATA: EquipmentSpec = {
   title: "Airbus A320 FTD Level 5 Simulator",
-  description: "국토교통부 최고 등급 가등급 인증을 획득한 고정밀 플라이트 시뮬레이션 디바이스입니다. 실제 A320 조종석 하드웨어를 1:1 완벽 복제하였으며, 디테일한 비주얼 시스템을 적용하였습니다.",
+  description: "ICAO Level D 및 FAA 5등급 이상 인증을 획득한 고정밀 플라이트 시뮬레이션 디바이스입니다. 실제 A320 조종석 하드웨어를 1:1 완벽 복제하였으며, 디테일한 비주얼 시스템을 적용하였습니다.",
   imageUrl: IMAGE_PATHS.simulatorTraining,
   specs: [
-    { label: "인증 등급", value: "대한민국 국토교통부 FTD 가등급 인증" },
+    { label: "인증 등급", value: "ICAO Level D 및 FAA 5등급 이상 인증" },
     { label: "비주얼 시스템", value: "HD Collimated FOV 180° x 40° 와이드 스크린" },
     { label: "조종 장치", value: "Airbus 오리지널 사이드스틱 및 Active Force Feedback 시스템" },
     { label: "데이터 베이스", value: "전 세계 10,000개 이상 국제공항 지표면 및 항로 완벽 로딩" },
@@ -117,7 +117,7 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: "faq-2",
     question: "본 시뮬레이터 이용 시간이 항공사 이력서에 경력으로 기입될 수 있나요?",
-    answer: "네! 당사 시뮬레이터는 국토교통부 FTD 가등급 인증 기기로, 정해진 교육 이수 시 정식 수료증이 교부되며 에어라인 채용 지원서상 시뮬레이터 훈련 시간 및 MCC 이수 경력에 안전하게 기재 가능합니다. 국적사 공채 실기 대비에도 완벽하고 직접적인 시너지 효과를 냅니다."
+    answer: "네! 당사 시뮬레이터는 ICAO Level D 및 FAA 5등급 이상 인증 기기로, 정해진 교육 이수 시 정식 수료증이 교부되며 에어라인 채용 지원서상 시뮬레이터 훈련 시간 및 MCC 이수 경력에 안전하게 기재 가능합니다. 국적사 공채 실기 대비에도 완벽하고 직접적인 시너지 효과를 냅니다."
   },
   {
     id: "faq-3",
