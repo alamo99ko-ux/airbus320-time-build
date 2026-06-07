@@ -17,7 +17,7 @@ export default function ContactForm() {
   const [showAlert, setShowAlert] = useState(false);
 
   const handleFormClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (GOOGLE_FORM_URL === "" || GOOGLE_FORM_URL.includes("https://forms.gle/KrG2mc7sdVay6BG37")) {
+    if (!GOOGLE_FORM_URL || GOOGLE_FORM_URL.includes("여기에 구글폼") || GOOGLE_FORM_URL.startsWith("[")) {
       e.preventDefault();
       setShowAlert(true);
       setTimeout(() => setShowAlert(false), 5000);
