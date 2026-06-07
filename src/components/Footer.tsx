@@ -30,7 +30,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-sm font-sans">
-              에어라인 입사와 실기 평정의 격을 높이는 Airbus A320 및 Boeing B737-800 FTD 모의비행 경력 구축 전문 기관. 현직 최고의 기장진의 SOP 정교 훈련을 제공받으십시오.
+              에어라인 입사와 실기 평정의 품격을 높이는 Airbus A320 및 Boeing B737-800 FTD 모의비행 경력 구축 전문 기관. 현직 최고의 기장진의 SOP 정규 훈련을 제공받으십시오.
             </p>
           </div>
 

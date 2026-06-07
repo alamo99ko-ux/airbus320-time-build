@@ -39,7 +39,7 @@ export default function ValueProposition() {
             transition={{ delay: 0.1, duration: 0.8 }}
             className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4"
           >
-            왜 A320 Time Building 코스여야 하는가?
+            왜 터보팬 항공기 Time Building 코스여야 하는가?
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
