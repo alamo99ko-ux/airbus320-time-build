@@ -88,7 +88,7 @@ export default function ContactForm() {
                   <p className="text-xs text-gray-500 font-mono">DIRECT INQUIRY</p>
                   <p className="text-sm font-semibold text-white">82-10-3962-7856</p>
                   <p className="text-xs text-slate-400 font-sans mt-1.5 leading-relaxed">
-                    구글폼 상담 신청을 먼저 이용해주시고, 간편한 문의는 문자메시지 남겨주시면 신속히 응대 드리겠습니다.
+                    상담 신청을 먼저 이용해주시고, 간편한 문의는 문자메시지 남겨주시면 신속히 응대 드리겠습니다.
                   </p>
                 </div>
               </div>
