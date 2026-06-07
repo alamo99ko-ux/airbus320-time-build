@@ -12,12 +12,12 @@ export default function ContactForm() {
   // [여기에 구글폼 링크를 삽입해주세요]
   // 아래 주소값 대신 실제 운용하시는 구글 설문지 링크를 넣어주시면 바로 연동됩니다.
   // ==========================================
-  const GOOGLE_FORM_URL = "[https://forms.gle/KrG2mc7sdVay6BG37]";
+  const GOOGLE_FORM_URL: string = "https://forms.gle/KrG2mc7sdVay6BG37";
 
   const [showAlert, setShowAlert] = useState(false);
 
   const handleFormClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (GOOGLE_FORM_URL === "[https://forms.gle/KrG2mc7sdVay6BG37]") {
+    if (GOOGLE_FORM_URL === "" || GOOGLE_FORM_URL.includes("https://forms.gle/KrG2mc7sdVay6BG37")) {
       e.preventDefault();
       setShowAlert(true);
       setTimeout(() => setShowAlert(false), 5000);
