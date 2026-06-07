@@ -62,7 +62,7 @@ export default function ContactForm() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-gray-400 font-sans leading-relaxed text-sm sm:text-base"
             >
-              간편한 구글 설문 상담 신청을 접수해 주시면 수석 교관팀이 24시간 이내에 직접 로그북 진단과 함께 에어라인 지원 타겟 기종 경력 빌딩 견적을 무상 제공해 드립니다.
+              간편한 설문 상담 신청을 접수해 주시면 교관팀이 원하는 시간에 에어라인 지원 타겟 기종 타임빌딩 견적을 진행해 드립니다.
             </motion.p>
 
             <motion.div
