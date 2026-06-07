@@ -137,7 +137,7 @@ export default function ContactForm() {
             </h3>
 
             <p className="text-sm text-slate-300 leading-relaxed font-sans mb-8">
-              당사 대표 교육위원진과 진행하는 맞춤 면허 상담 및 시간 빌딩 과정 매치업 분석을 위해 아래 버튼을 클릭하여 공식 구글 설문지에 핵심 세부 항목을 작성해 주십시오. 
+              교육팀과 진행하는 면허 상담 및 타임빌딩 과정 매치업 분석을 위해 아래 버튼을 클릭하여 상담 신청서에 필수항목을 작성해 주십시오. 
             </p>
 
             {/* High-quality Step representation before redirecting */}

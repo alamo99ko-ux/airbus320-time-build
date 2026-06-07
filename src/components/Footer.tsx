@@ -40,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li className="flex items-center space-x-2 text-gray-400">
                 <Shield className="h-4 w-4 text-[#00AEEF]" />
-                <span>ICAO Level D 및 FAA 5등급 이상 인증 교육</span>
+                <span>ICAO Type V, FAA Level D 인증 교육</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <Navigation className="h-4 w-4 text-[#00AEEF]" />

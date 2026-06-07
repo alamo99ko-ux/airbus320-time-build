@@ -115,7 +115,7 @@ export default function Hero() {
                 <Award className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-xl font-bold text-white font-mono leading-none">14.5K</p>
+                <p className="text-xl font-bold text-white font-sans leading-none">8,000 시간 이상</p>
                 <p className="text-xs text-gray-400 mt-1">수석 기장 비행 이력</p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-xl font-bold text-white font-mono leading-none">100%</p>
-                <p className="text-xs text-gray-400 mt-1">ICAO Level D & FAA 5등급 이상</p>
+                <p className="text-xs text-gray-400 mt-1">ICAO Type V, FAA Level D</p>
               </div>
             </div>
           </motion.div>
