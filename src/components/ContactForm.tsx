@@ -193,7 +193,7 @@ export default function ContactForm() {
               id="google-form-cta-link"
             >
               <ExternalLink className="h-5 w-5 mr-2 animate-pulse" />
-              <span>구글 설문 상담 신청서 작성하기</span>
+              <span> 프로그램 상담 신청서 작성하기</span>
             </a>
 
             <div className="mt-5 text-center">

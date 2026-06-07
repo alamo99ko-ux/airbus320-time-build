@@ -83,13 +83,15 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16"
           >
-            <button
-              onClick={handleScrollToForm}
+            <a
+              href="https://forms.gle/KrG2mc7sdVay6BG37"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-[#00AEEF] text-[#0A1F44] font-bold rounded-lg shadow-lg shadow-[#00AEEF]/20 hover:bg-white text-base transition-all duration-300 hover:shadow-[0_0_20px_#00AEEF] tracking-wide flex items-center justify-center space-x-2 cursor-pointer"
             >
               <Plane className="h-5 w-5 transform -rotate-45" />
-              <span>무료 커리어 컨설팅 신청</span>
-            </button>
+              <span>무료 커리어 컨설팅 신청하기</span>
+            </a>
             <button
               onClick={() => {
                 const term = document.getElementById("curriculum");
