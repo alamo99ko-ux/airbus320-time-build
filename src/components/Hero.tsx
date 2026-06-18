@@ -59,9 +59,10 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 1, ease: "easeOut" }}
             className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight mb-8 animate-fade-in"
           >
-            <span className="block text-[#00AEEF] text-lg sm:text-xl lg:text-2xl font-semibold mb-4 tracking-wide font-sans">
-              빌딩 올리고 싶으세요? 터보팬 항공기와 운항노선 경험으로 완성하십시오.
-            </span>
+            <div className="mb-4 tracking-wide font-sans">
+              <span className="block text-[#00AEEF] font-semibold text-3xl sm:text-4xl lg:text-5xl">빌딩 올리고 싶으세요?</span>
+              <span className="block text-white font-semibold text-lg sm:text-xl lg:text-2xl mt-2">터보팬 항공기와 운항노선 경험으로 완성하십시오.</span>
+            </div>
             <span className="text-[#00AEEF] relative inline-block">A320과 B737 로 도전하십시오.<span className="absolute bottom-1 left-0 w-full h-[4px] bg-[#00AEEF]/40"></span></span>
           </motion.h1>
 
